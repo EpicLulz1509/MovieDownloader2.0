@@ -16,12 +16,12 @@ chromeOptions = webdriver.ChromeOptions()
 driver.set_window_size(1024, 600)
 driver.maximize_window()
 
-qb = Client("http://127.0.0.1:8080/")
-qb.login("admin", "adminadmin")
-
 driver.get("https://www.imdb.com/list/ls091520106/")
 movie_names_arr = []
 movie_name = ""
+
+qb = Client("http://127.0.0.1:8080/")
+qb.login("admin", "adminadmin")
 
 
 for i in range(1, 5) :
@@ -30,7 +30,7 @@ for i in range(1, 5) :
 
 driver.get("https://www.1377x.to/popular-movies")
 
-for i in range(1, 3):
+for i in range(1, 5):
     pyautogui.click(x=1251, y=207)
     # change it based on position of the searchbox in your browser
     time.sleep(2)
