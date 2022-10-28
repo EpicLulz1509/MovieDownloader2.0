@@ -24,13 +24,13 @@ qb = Client("http://127.0.0.1:8080/")
 qb.login("admin", "adminadmin")
 
 
-for i in range(1, 5) :
+for i in range(1, 100) :
     movie_name = driver.find_element_by_xpath(f"/html/body/div[2]/div/div[2]/div[3]/div[1]/div/div[4]/div[3]/div[{i}]/div[2]/h3/a").text
     movie_names_arr.append(movie_name)
 
 driver.get("https://www.1377x.to/popular-movies")
 
-for i in range(1, 5):
+for i in range(1, 100):
     pyautogui.click(x=1251, y=207)
     # change it based on position of the searchbox in your browser
     time.sleep(2)
