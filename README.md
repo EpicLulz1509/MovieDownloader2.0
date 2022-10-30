@@ -12,7 +12,7 @@ Download libraries : selenium, pynput, pyautogui, time, qbittorrent.<br />
 Download qbittorrent and set downlaod location.<br />
 Downlaod the selenium webdrivers and set file path in line 14 according to your browser and browser version.<br />
 chrome webdriver : https://chromedriver.chromium.org/downloads.<br />
-
+Use a system vpn if 1337x is blocked
 
 
 REMINDER:<br />
