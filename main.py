@@ -6,12 +6,13 @@ keyboard = Controller()
 from qbittorrent import Client
 
 chromeOptions = webdriver.ChromeOptions()
-path = "Downloads/Movies"
+path = input("Enter the destination location of the download")
 prefs = {"download.default_directory": path}  # downloaded file location
 chromeOptions.add_experimental_option("prefs", prefs)
 chromeOptions.headless = False           #put true for headless mode, script wont work tho
 
-driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe", options=chromeOptions)
+driver_location = input("Enter the chrome driver executable path path here.")
+driver = webdriver.Chrome(executable_path=driver_location, options=chromeOptions)
 chromeOptions = webdriver.ChromeOptions()
 driver.set_window_size(1024, 600)
 driver.maximize_window()
