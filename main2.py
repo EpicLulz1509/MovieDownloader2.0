@@ -7,12 +7,13 @@ from qbittorrent import Client
 import pyautogui
 
 chromeOptions = webdriver.ChromeOptions()
-path = "Downloads/Movies"
+path = input("Where do you want to download the file?")
 prefs = {"download.default_directory": path}  # downloaded file location
 chromeOptions.add_experimental_option("prefs", prefs)
 chromeOptions.headless = False           #put true for headless mode, script wont work tho
 
-driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe", options=chromeOptions)
+driverPath = input("Enter the path of your chrome web driver.")
+driver = webdriver.Chrome(executable_path=str(driverPath), options=chromeOptions)
 chromeOptions = webdriver.ChromeOptions()
 driver.set_window_size(1024, 600)
 driver.maximize_window()
