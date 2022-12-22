@@ -23,3 +23,5 @@ Lines 34 and 38 are soft coded according to display size 1920x1080. If your disp
 
 
 Mail all problems/issues to duttaarunopal@gmail.com or raise an issue.<br />
+
+FOR EDUCATIONAL USES ONLY <br />
